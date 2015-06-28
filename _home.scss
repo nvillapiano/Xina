@@ -1,0 +1,47 @@
+// _home.scss
+
+.home {
+	footer {
+		border-top: none;
+	}
+	header {
+		background: url('images/green-black-fish.jpg') repeat center center;
+		background-size: 15rem;
+	}
+}
+
+.main-info {
+	width: 90%;
+	height: 40vh;
+	margin: 0 auto;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	display: table;
+	border-bottom: .15rem solid;
+}
+
+.main-info {
+	article {
+		width: 32%;
+		display: inline-block;
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+		padding-top: 5vh;
+	}
+	article:nth-of-type(3) {
+		background: url('images/fishy.png') no-repeat 76% bottom;
+		background-size: 15%;
+	}
+	h2 + a {
+		margin-top: 0.2vw;
+		display: block;
+		margin-bottom: 2.2vw;
+		font-size: 1.2vw;
+	}	
+}
+
+.hours {
+	border-left: .15rem solid;
+	border-right: .15rem solid;
+}

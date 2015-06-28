@@ -1,0 +1,24 @@
+// _680.scss
+
+@media only screen and (max-width: 680px) {
+
+	nav {
+		font-size: 0.9rem;
+		padding: 4vw 2.5vw 2.5vw;
+	}
+
+	.main-info {
+		article:nth-of-type(3) {
+			background: none;
+		}
+	}
+
+	/* Gallery */
+
+	.gallery-grid {
+		li {
+			width: 50%;
+		}
+	}
+
+}

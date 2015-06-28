@@ -1,0 +1,831 @@
+@charset "UTF-8";
+
+/*
+* Xina
+* Designed and Developed by @quietpoints
+* www.quietpoints.com
+*/
+
+
+/* Site Styles
+================================================== */
+
+html {
+
+}
+
+body {
+	border-top: .4rem solid #f4815f;
+	background: #f3f3f4;
+	color: #c69c6d;
+	font-family: 'gotham-light', sans-serif;
+}
+
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+}
+
+footer {
+	border-bottom: .4rem solid #f4815f;
+}
+
+/* Typography */
+
+h1 {
+	font-family: 'gotham-light', sans-serif;
+	font-size: 3.6vw;
+	line-height: 1.111;
+	font-weight: 200;
+	margin-bottom: 1.5vw;
+}
+
+h2 {
+	font-family: 'gotham-medium', sans-serif;
+	font-size: 1.8vw;
+	line-height: 1;
+}
+
+h3 {
+	font-family: 'gotham-medium', sans-serif;
+	font-size: 1.6vw;
+	line-height: 1.125;
+}
+
+h4 {
+	font-family: 'gotham-medium', sans-serif;
+	font-size: 1.2vw;
+	line-height: 1.5;
+	margin-bottom: 2vw;
+}
+
+h6 {
+	font-family: 'gotham-medium', sans-serif;	
+	font-size: 0.9vw;
+	text-align: center;
+	margin-bottom: 1vw;
+}
+
+header {
+	position: relative;
+	text-align: center;
+}
+
+header .logo {
+	position: relative;
+	top: 45%;
+	transform: translateY(-45%);
+	width: 50%;
+	margin: 0 auto;
+	max-width: 16rem;
+}
+
+.menu header .logo, .gallery .menu header .logo {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50%;
+	margin: 0 auto;
+}
+
+::selection {
+	color: #fff;
+	background: rgba(244, 129, 95, 0.9);
+}
+
+::-moz-selection {
+	color: #fff;
+	background: rgba(244, 129, 95, 0.9);
+}
+
+
+/* Page Styles
+================================================== */
+
+/* Home */
+
+.home, nav, footer {
+	text-transform: uppercase;
+}
+
+a, a:hover, a:visited, a:active {
+	text-decoration: none;
+	color: #c69c6d;
+	font-family: 'gotham-medium', sans-serif;
+	transition: color .3s;
+}
+
+a:hover {
+	color: #f4815f;
+}
+
+header {
+	height: 40vh;
+	background: url('images/green-black-scales.jpg') repeat center center;
+	background-size: 18rem;
+}
+
+.gold-scale-border {
+	background: url('images/scales-gold.png') repeat center top;
+	background-size: 16rem;
+	height: 5vh;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.home .main-info {
+	height: 40vh
+}
+
+nav {
+	width: 90%;
+	margin: 0 auto;
+	font-family: 'gotham-medium', sans-serif;
+	font-size: 1.6vw;
+	text-align: center;
+	border-bottom: .15rem solid;
+	padding: 2vw 0 1.5vw;
+}
+
+nav a {
+	display: inline-block;
+	width: 32%;
+}
+
+.main-info {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	display: table;
+	border-bottom: .15rem solid;
+}
+
+.main-info article {
+	width: 32%;
+	display: inline-block;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	padding-top: 5vh;
+}
+
+.main-info article:nth-of-type(3) {
+	background: url('images/fishy.png') no-repeat 76% bottom;
+	background-size: 15%;
+}
+
+.main-info h2 + a {
+	margin-top: 0.2vw;
+	display: block;
+	margin-bottom: 2.2vw;
+	font-size: 1.2vw;
+}
+
+.hours {
+	border-left: .15rem solid;
+	border-right: .15rem solid;
+}
+
+footer {
+	height: 15vh;
+	width: 100%;
+	position: relative;
+	font-size: 1.2vw;
+	float: left;
+	border-top: .15rem solid;
+}
+
+.footer-nav {
+	text-align: center;
+	position: relative;
+	top: 40%;
+	transform: translateY(-60%);
+}
+
+.footer-nav div {
+	display: inline-block;
+	margin: 1.5vh auto;
+	padding: 0 5vw;
+}
+
+.footer-nav img {
+	width: 2vw;
+	opacity: 1;
+	transition: opacity .3s;
+}
+
+.footer-nav img:hover {
+	opacity: .8;
+}
+
+.teal-scale-border {
+	background: url('images/blue-blue-scales.jpg') repeat center center;
+	background-size: 16rem;
+	height: 5vh;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	border-top: .15rem solid;
+}
+
+.home footer {
+	border-top: none;
+}
+
+.home header {
+	background: url('images/green-black-fish.jpg') repeat center center;
+	background-size: 15rem;
+}
+
+.logo img {
+	max-height: 25vh;
+}
+
+/* Menus */
+
+.menu header {
+	height: 40vh;
+}
+
+.menu nav {
+	width: 80%;
+}
+
+.menu header {
+	height: 40vh;
+	background: url('images/scales-green.png') repeat center center;
+	background-size: 25rem;
+}
+
+.main-menu, .starters, .entrees, .sushi, .signature-rolls, .dessert, .starters {
+	width: 100%;
+	clear: both;
+}
+
+.menu h1 {
+	font-size: 3rem;
+	width: 100%;
+	text-align: center;
+	border-bottom: 0.15rem solid;
+	margin: 0 auto;
+	padding: 1.5vw 0 1vw;
+	text-transform: uppercase;
+}
+
+.menu-header {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	float: left;
+	display: block;
+	padding: 1rem;
+	border-bottom: .15rem solid #fff;
+	margin-bottom: 1rem;
+}
+
+.menu-header img {
+	max-width: 10%;
+	float: left;
+}
+
+.menu-header img:last-of-type {
+	float: right;
+	transform: rotateY(180deg);
+}
+
+.menu-header h1 {
+	width: 100%;
+	border-bottom: none;
+	display: inline;
+	margin: 0;
+	position: relative;
+	top: 5vw;
+}
+
+.menu-wrapper {
+	width: 100%;
+	padding: 0 10%;
+	float: left;
+}
+
+.colspan1 {
+	width: 50%;
+	float: left;
+	padding-right: 2%;
+}
+
+.colspan1 + .colspan1 {
+	padding-right: 0;
+	padding-left: 2%;
+}
+
+.menu-category {
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	font-size: 1.8rem;
+	border-bottom: .15rem solid;
+	padding: 1.1rem 0 0.9rem;
+	margin-bottom: 1.5rem;
+}
+
+.menu-icon {
+	max-width: 40%;
+	margin: 1.5rem auto 0;
+}
+
+.category-description {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "gotham-medium", sans-serif;
+	font-size: 0.8rem;
+	max-width: 50%;
+	margin: 0 auto 1.5rem;
+	color: #f4815f;
+}
+
+.menu-item-wrapper {
+	color: #3e5455;
+	padding: 0 0.5rem;
+	margin-bottom: 0;
+	float: left;
+	width: 100%;
+}
+
+.menu-item-wrapper:last-of-type {
+	margin-bottom: 3rem;
+}
+
+.menu-title, .menu-price {
+	text-transform: uppercase;
+	font-family: "gotham-medium", sans-serif;
+	font-size: 1rem;
+	line-height: 1.7;
+	float: left;
+	margin-top: .25rem;
+}
+
+.menu-price {
+	float: right;
+}
+
+.menu-description {
+	float: left;
+	clear: both;
+	margin-top: 0;
+	max-width: 70%;
+	font-size: .8rem;
+	line-height: 1.45;
+	text-transform: lowercase;
+}
+
+.pattern-footer {
+	height: 5rem;
+	width: 	100%;
+	float: left;
+	clear: both;
+	background: url('images/waves-gold.png') repeat-x center bottom;
+}
+
+.pattern-header {
+	height: 5rem;
+	width: 	100%;
+	float: left;
+	clear: both;
+	background: url("images/scales-gold.png") repeat-x #b9dbdf center -1%;
+	background-size: 18.4rem;
+}
+
+/* Starters */
+
+.starters h1 {
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+}
+
+/* Entrees */
+
+.entrees, .entrees .menu-wrapper, .entrees .menu-wrapper > * {
+	background: #c69c6d;
+}
+ 
+.entrees h1 {
+	color: #fff;
+	margin-bottom: 1.5rem;
+}
+
+.entrees .menu-header img {
+	max-width: 25%;
+}
+
+.entrees .pattern-footer {
+	background: url('images/scales-blue.png') center 0% repeat-x #c69c6d;
+	background-size: 18.4rem;
+	margin-top: -1rem;
+}
+
+/* Sushi */
+
+.sushi, .sushi .menu-wrapper, .sushi .menu-wrapper > * {
+	background: #b9dbdf;
+}
+
+.sushi .menu-category, .sushi .category-description {
+	color: #fff;
+}
+ 
+.sushi h1 {
+	color: #fff;
+	margin-bottom: 1.5rem;
+}
+
+.maki .menu-icon {
+	max-width: 80%;
+}
+
+.sushi-entrees .menu-icon img {
+	margin-top: 2rem;
+}
+
+.sushi .pattern-footer {
+	background: url('images/scales-gold.png') center -20% repeat-x #b9dbdf;
+	background-size: 18.4rem;
+	margin-bottom: -0.1rem;
+}
+
+/* Signature Rolls */
+
+.signature-rolls, .signature-rolls .menu-wrapper, .signature-rolls .menu-wrapper > * {
+	background: #c69c6d;
+}
+ 
+.signature-rolls h1 {
+	color: #fff;
+	margin-bottom: 1.5rem;
+}
+
+.signature-rolls .pattern-footer {
+	background: url('images/waves-white.png') repeat-x center bottom #c69c6d;
+}
+
+.signature-rolls .menu-header img {
+	max-width: 15%;
+}
+
+.signature-rolls .menu-header h1 {
+	top: 4vw;
+}
+
+/* Desserts */
+
+.desserts .menu-icon {
+	width: 30%;
+ 	max-width: 140px;
+	margin: 0 auto 1.5rem;
+	position: relative;
+	top: 1vw;
+}
+
+
+/* Gallery */
+
+.gallery header {
+	height: 40vh;
+}
+.gallery .logo img {
+  max-height: 25vh;
+}
+
+.gallery-wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.gallery h1 {
+	text-align: center;
+	border-bottom: .15rem solid;
+	text-transform: uppercase;
+	font-size: 3rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-bottom: 0.5rem;
+}
+
+.gallery-grid {
+	border-bottom: .15rem solid;
+	float: left;
+	padding-bottom: 0.5rem;
+}
+
+.widget-title {
+	display: none;
+}
+
+.gallery .clear {
+	display: none;
+}
+
+.gallery li {
+	list-style: none;
+	display: block;
+	float: left;
+	width: 25%;
+	margin-bottom: -0.3rem;
+}
+
+li a {
+
+}
+
+li a img {
+
+}
+
+.gallery footer {
+	border-top: none;
+}
+
+/* Media Queries
+================================================== */
+
+@media only screen and (max-width: 960px) {
+
+	nav {
+		font-size: 1.2rem;
+		padding: 2vw 2vw 1.5vw;
+	}
+
+	nav a:first-of-type {
+		text-align: left;
+	}
+
+	nav a:last-of-type {
+		text-align: right;
+	}
+
+	.footer-nav img {
+  		width: 3vw;
+	}
+
+	/* Menu */
+
+	.signature-rolls .menu-header img {
+  		max-width: 15%;
+	}
+
+	.signature-rolls .menu-header h1 {
+  		top: 2vw;
+  		font-size: 2.4rem;
+	}
+
+	/* Gallery */
+
+	.gallery-grid li {
+		width: 33%;
+	}
+
+}
+
+@media only screen and (min-width: 770px) {
+	
+	.desktop {
+		display: block;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 769px) {
+
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+	.main-info h2 + a {
+		font-size: 1rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	.footer-nav img {
+  		width: 4vw;
+	}
+
+	h4 {
+		font-size: .8rem;
+	}
+
+	h6 {
+		font-size: .7rem;
+		margin: 1rem 0;
+	}
+
+	.gold-scale-border {
+		height: 2.2rem;
+	}
+
+	/* Home */
+
+	.main-info article {
+		width: 100%;
+		display: block;
+		padding-top: 4vh;
+	}
+
+	.hours {
+		border: none;
+	}
+
+	.main-info article:nth-of-type(3) {
+		background: url('images/fishy.png') no-repeat 90% bottom;
+		background-size: contain;
+	}
+
+
+	/* Menu */
+
+	.menu h1, .gallery h1 {
+		margin-top: 1rem;
+  		padding-bottom: 1rem;
+  		margin-bottom: 1rem;
+	}
+
+	.menu nav {
+		width: 90%;
+	}
+
+	.menu-wrapper {
+		padding: 0 5%;
+	}
+
+	.colspan1 {
+		width: 100%;
+		float: left;
+		padding-right: 0;
+	}
+
+	.colspan1 + .colspan1 {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.menu-header img {
+		display: block;
+		clear: both;
+		margin: 0 auto 1rem;
+		float: none;
+		max-width: 40% !important;
+	}
+
+	.entrees .menu-header img {
+		max-width: 60% !important;
+	}
+
+	.menu-header img:last-of-type {
+		display: none;
+	}
+
+	.menu-header h1 {
+		top: 0 !important;
+	}
+
+	.menu-title {
+		width: 80%;
+	}
+
+	.desserts .menu-icon {
+		top: 2vw;
+	}
+
+	.sushi .menu-category {
+  		float: left;
+	}
+
+	.starters .colspan1 .menu-item-wrapper:last-of-type, .entrees .colspan1 .menu-item-wrapper:last-of-type, .signature-rolls .colspan1 .menu-item-wrapper:last-of-type {
+  		margin-bottom: 0;
+	}
+
+	.starters .menu-wrapper, .entrees .menu-wrapper, .signature-rolls .menu-wrapper {
+		padding-bottom: 3rem;
+	}
+
+}
+
+@media only screen and (max-width: 680px) {
+
+	nav {
+		font-size: 0.9rem;
+		padding: 4vw 2.5vw 2.5vw;
+	}
+
+	.main-info article:nth-of-type(3) {
+		background: none;
+	}
+
+	/* Gallery */
+
+	.gallery-grid li {
+		width: 50%;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	nav a:nth-of-type(2) {
+		position: relative;
+  		left: -4vw;
+	}
+
+	.footer-nav img {
+  		width: 8vw;
+	}
+
+	/* Gallery */
+
+	.gallery-grid li {
+		width: 100%;
+		margin: 0 0 1rem 0;
+	}
+
+	.gallery-grid li:last-of-type {
+		margin-bottom: .5rem;
+	}
+
+	/* Menu */
+
+	.menu-title, .menu-price {
+		line-height: 1.3;
+		margin-bottom: 0.2rem;
+		margin-top: .5rem;
+	}
+
+}
+
+@media only screen and (max-width: 320px) {
+
+	nav {
+		padding: 6vw 0.5vw 4.5vw;
+	}
+
+	nav a:nth-of-type(2) {
+  		position: relative;
+  		left: -7vw;
+	}
+
+	h1 {
+		font-size: 2.6rem;
+	}
+
+	h2 {
+		font-size: 1.7rem;
+	}
+
+	/* Menu */
+
+	.menu-title {
+		width: 75%;
+	}
+
+}
+
+
+/* Font-Face
+================================================== */
+
+@font-face {
+	font-family: 'gotham-light';
+	src: url('fonts/gotham-light.eot'); /* IE9 Compat Modes */
+	src: url('fonts/gotham-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    	url('fonts/gotham-light.woff') format('woff'), /* Modern Browsers */
+    	url('fonts/gotham-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+    	url('fonts/gotham-light.svg#bf16822e282b4d885cff891f3a65335d') format('svg'); /* Legacy iOS */       
+	font-style: normal;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'gotham-medium';
+	src: url('fonts/gotham-medium.eot'); /* IE9 Compat Modes */
+	src: url('fonts/gotham-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('fonts/gotham-medium.woff') format('woff'), /* Modern Browsers */
+		url('fonts/gotham-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('fonts/gotham-medium.svg#bdc473fae2f64b1c45b8886bcff81bae') format('svg'); /* Legacy iOS */       
+	font-style: normal;
+	font-weight: 400;
+}
+

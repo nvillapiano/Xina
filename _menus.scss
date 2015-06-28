@@ -1,0 +1,256 @@
+// _menus.scss
+
+.menu {
+	header {
+		height: 40vh;
+		background: url('images/scales-green.png') repeat center center;
+		background-size: 25rem;
+	}
+	nav {
+		width: 80%;
+	}
+	h1 {
+		font-size: 3rem;
+		width: 100%;
+		text-align: center;
+		border-bottom: 0.15rem solid;
+		margin: 0 auto;
+		padding: 1.5vw 0 1vw;
+		text-transform: uppercase;
+	}
+}
+
+.main-menu, .starters, .entrees, .sushi, .signature-rolls, .dessert, .starters {
+	width: 100%;
+	clear: both;
+}
+
+.menu-header {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	float: left;
+	display: block;
+	padding: 1rem;
+	border-bottom: .15rem solid #fff;
+	margin-bottom: 1rem;
+}
+
+.menu-header {
+	img {
+		max-width: 10%;
+		float: left;
+	}
+	img:last-of-type {
+		float: right;
+		transform: rotateY(180deg);
+	}
+	h1 {
+		width: 100%;
+		border-bottom: none;
+		display: inline;
+		margin: 0;
+		position: relative;
+		top: 5vw;
+	}
+}
+
+.menu-wrapper {
+	width: 100%;
+	padding: 0 10%;
+	float: left;
+}
+
+.colspan1 {
+	width: 50%;
+	float: left;
+	padding-right: 2%;
+}
+
+.colspan1 + .colspan1 {
+	padding-right: 0;
+	padding-left: 2%;
+}
+
+.menu-category {
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	font-size: 1.8rem;
+	border-bottom: .15rem solid;
+	padding: 1.1rem 0 0.9rem;
+	margin-bottom: 1.5rem;
+}
+
+.menu-icon {
+	max-width: 40%;
+	margin: 1.5rem auto 0;
+}
+
+.category-description {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: $gotham-medium;
+	font-size: 0.8rem;
+	max-width: 50%;
+	margin: 0 auto 1.5rem;
+	color: $coral;
+}
+
+.menu-item-wrapper {
+	color: #3e5455;
+	padding: 0 0.5rem;
+	margin-bottom: 0;
+	float: left;
+	width: 100%;
+}
+
+.menu-item-wrapper:last-of-type {
+	margin-bottom: 3rem;
+}
+
+.menu-title, .menu-price {
+	text-transform: uppercase;
+	font-family: $gotham-medium;
+	font-size: 1rem;
+	line-height: 1.7;
+	float: left;
+	margin-top: .25rem;
+}
+
+.menu-price {
+	float: right;
+}
+
+.menu-description {
+	float: left;
+	clear: both;
+	margin-top: 0;
+	max-width: 70%;
+	font-size: .8rem;
+	line-height: 1.45;
+	text-transform: lowercase;
+}
+
+.pattern-footer {
+	height: 5rem;
+	width: 	100%;
+	float: left;
+	clear: both;
+	background: url('images/waves-gold.png') repeat-x center bottom;
+}
+
+.pattern-header {
+	height: 5rem;
+	width: 	100%;
+	float: left;
+	clear: both;
+	background: url("images/scales-gold.png") repeat-x $blue center -1%;
+	background-size: 18.4rem;
+}
+
+/* Starters */
+
+.starters {
+	h1 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+	}
+}
+
+/* Entrees */
+
+.entrees {
+
+	background: $gold;
+	
+	.menu-wrapper, .menu-wrapper > * {
+		background: $gold;
+	}
+	h1 {
+		color: #fff;
+		margin-bottom: 1.5rem;
+	}
+	.menu-header img {
+		max-width: 25%;
+	}
+	.pattern-footer {
+		background: url('images/scales-blue.png') center 0% repeat-x $gold;
+		background-size: 18.4rem;
+		margin-top: -1rem;
+	}
+}
+
+/* Sushi */
+ 
+.sushi {
+	background: $blue;
+
+	h1 {
+		color: #fff;
+		margin-bottom: 1.5rem;
+	}
+	.pattern-footer {
+		background: url('images/scales-gold.png') center -20% repeat-x $blue;
+		background-size: 18.4rem;
+		margin-bottom: -0.1rem;
+	}
+	.menu-category, .category-description {
+		color: #fff;
+	}
+	.menu-wrapper, .menu-wrapper > * {
+		background: $blue;
+	}
+}
+
+.maki { 
+	.menu-icon {
+		max-width: 80%;
+	}
+}
+
+.sushi-entrees {
+	.menu-icon img {
+		margin-top: 2rem;
+	}
+}
+
+/* Signature Rolls */
+ 
+.signature-rolls {
+	background: $gold;
+	
+	.menu-wrapper, .menu-wrapper > * {
+		background: $gold;
+	}
+
+	h1 {
+		color: #fff;
+		margin-bottom: 1.5rem;
+	}
+
+	.pattern-footer {
+		background: url('images/waves-white.png') repeat-x center bottom $gold;
+	}
+
+	.menu-header img {
+		max-width: 15%;
+	}
+
+	.menu-header h1 {
+		top: 4vw;
+	}
+
+}
+
+/* Desserts */
+
+.desserts {
+	.menu-icon {
+		width: 30%;
+	 	max-width: 140px;
+		margin: 0 auto 1.5rem;
+		position: relative;
+		top: 1vw;
+	}
+}

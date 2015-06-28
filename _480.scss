@@ -1,0 +1,38 @@
+// _480.scss
+
+@media only screen and (max-width: 480px) {
+
+	nav { 
+		a:nth-of-type(2) {
+			position: relative;
+  			left: -4vw;
+		}
+	}
+
+	.footer-nav {
+		img {
+	  		width: 8vw;
+		}
+	}
+
+	/* Gallery */
+
+	.gallery-grid {
+		li {
+			width: 100%;
+			margin: 0 0 1rem 0;
+		}
+		li:last-of-type {
+			margin-bottom: .5rem;
+		}
+	}
+
+	/* Menu */
+
+	.menu-title, .menu-price {
+		line-height: 1.3;
+		margin-bottom: 0.2rem;
+		margin-top: .5rem;
+	}
+
+}

@@ -1,0 +1,49 @@
+// _gallery.scss
+
+.gallery {
+	header {
+		height: 40vh;
+	}
+	.logo { 
+		img {
+			max-height: 25vh;
+		}
+	}
+	h1 {
+		text-align: center;
+		border-bottom: .15rem solid;
+		text-transform: uppercase;
+		font-size: 3rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding-bottom: 0.5rem;
+	}
+	.clear {
+		display: none;
+	}
+	li {
+		list-style: none;
+		display: block;
+		float: left;
+		width: 25%;
+		margin-bottom: -0.3rem;
+	}
+	footer {
+		border-top: none;
+	}
+}
+
+.gallery-wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.gallery-grid {
+	border-bottom: .15rem solid;
+	float: left;
+	padding-bottom: 0.5rem;
+}
+
+.widget-title {
+	display: none;
+}

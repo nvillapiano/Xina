@@ -1,0 +1,129 @@
+// _universal.scss
+
+body {
+	border-top: .4rem solid $coral;
+	background: #f3f3f4;
+	color: $gold;
+	font-family: 'gotham-light', sans-serif;
+}
+
+::selection {
+	color: #fff;
+	background: rgba(244, 129, 95, 0.9);
+}
+
+::-moz-selection {
+	color: #fff;
+	background: rgba(244, 129, 95, 0.9);
+}
+
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+}
+
+header {
+	position: relative;
+	text-align: center;
+	height: 40vh;
+	background: url('images/green-black-scales.jpg') repeat center center;
+	background-size: 18rem;
+
+	.logo {
+		position: relative;
+		top: 45%;
+		transform: translateY(-45%);
+		width: 50%;
+		margin: 0 auto;
+		max-width: 16rem;
+	}
+}
+
+footer {
+	height: 15vh;
+	width: 100%;
+	position: relative;
+	float: left;
+	font-size: 1.2vw;
+	border-top: .15rem solid;
+	border-bottom: .4rem solid $coral;
+}
+
+.footer-nav {
+	text-align: center;
+	position: relative;
+	top: 40%;
+	transform: translateY(-60%);
+
+	div {
+		display: inline-block;
+		margin: 1.5vh auto;
+		padding: 0 5vw;
+	}
+
+	img {
+		width: 2vw;
+		opacity: 1;
+		transition: opacity .3s;
+	}
+
+	img:hover {
+		opacity: .8;
+	}
+
+}
+
+a, a:hover, a:visited, a:active {
+	text-decoration: none;
+	color: $gold;
+	font-family: 'gotham-medium', sans-serif;
+	transition: color .3s;
+}
+
+a:hover {
+	color: $coral;
+}
+
+.gold-scale-border {
+	background: url('images/scales-gold.png') repeat center top;
+	background-size: 16rem;
+	height: 5vh;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.home, nav, footer {
+	text-transform: uppercase;
+}
+
+nav {
+	width: 90%;
+	margin: 0 auto;
+	font-family: 'gotham-medium', sans-serif;
+	font-size: 1.6vw;
+	text-align: center;
+	border-bottom: .15rem solid;
+	padding: 2vw 0 1.5vw;
+
+	a {
+		display: inline-block;
+		width: 32%;
+	}
+}
+
+.teal-scale-border {
+	background: url('images/blue-blue-scales.jpg') repeat center center;
+	background-size: 16rem;
+	height: 5vh;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	border-top: .15rem solid;
+}
+
+.logo {
+	img {
+		max-height: 25vh;
+	}
+}

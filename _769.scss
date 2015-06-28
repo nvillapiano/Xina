@@ -1,0 +1,149 @@
+// _769.scss
+
+@media only screen and (max-width: 769px) {
+
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h4 {
+		font-size: .8rem;
+	}
+
+	h6 {
+		font-size: .7rem;
+		margin: 1rem 0;
+	}	
+
+	.main-info {
+		h2 + a {
+			font-size: 1rem;
+		}
+	}
+
+	.footer-nav {
+		img {
+	  		width: 4vw;
+		}
+	}
+
+	.gold-scale-border {
+		height: 2.2rem;
+	}
+
+	/* Home */
+
+	.main-info {
+		article {
+			width: 100%;
+			display: block;
+			padding-top: 4vh;
+		}
+		article:nth-of-type(3) {
+			background: url('images/fishy.png') no-repeat 90% bottom;
+			background-size: contain;
+		}
+	}
+
+	.hours {
+		border: none;
+	}
+
+	/* Menu */
+
+	.menu h1, .gallery h1 {
+		margin-top: 1rem;
+  		padding-bottom: 1rem;
+  		margin-bottom: 1rem;
+	}
+
+	.menu {
+		nav {
+			width: 90%;
+		}
+	}
+
+	.menu-wrapper {
+		padding: 0 5%;
+	}
+
+	.colspan1 {
+		width: 100%;
+		float: left;
+		padding-right: 0;
+	}
+
+	.colspan1 + .colspan1 {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.menu-header {
+		img {
+			display: block;
+			clear: both;
+			margin: 0 auto 1rem;
+			float: none;
+			max-width: 40% !important;
+		}
+	}
+
+	.entrees {
+		.menu-header { 
+			img {
+				max-width: 60% !important;
+			}
+		}
+	}
+
+	.menu-header  {
+		img:last-of-type {
+			display: none;
+		}
+		h1 {
+			top: 0 !important;
+		}
+	}
+
+	.menu-title {
+		width: 80%;
+	}
+
+	.desserts {
+		.menu-icon {
+			top: 2vw;
+		}
+	}
+
+	.sushi {
+		.menu-category {
+	  		float: left;
+		}
+	}
+
+	.starters, .entrees, .signature-rolls {
+		.colspan1 {
+			.menu-item-wrapper:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.starters, .entrees, .signature-rolls {
+		.menu-wrapper {
+			padding-bottom: 3rem;
+		}
+	}
+}

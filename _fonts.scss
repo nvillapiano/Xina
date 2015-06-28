@@ -1,0 +1,23 @@
+// _fonts.scss
+
+@font-face {
+	font-family: 'gotham-light';
+	src: url('fonts/gotham-light.eot'); /* IE9 Compat Modes */
+	src: url('fonts/gotham-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    	url('fonts/gotham-light.woff') format('woff'), /* Modern Browsers */
+    	url('fonts/gotham-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+    	url('fonts/gotham-light.svg#bf16822e282b4d885cff891f3a65335d') format('svg'); /* Legacy iOS */       
+	font-style: normal;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'gotham-medium';
+	src: url('fonts/gotham-medium.eot'); /* IE9 Compat Modes */
+	src: url('fonts/gotham-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('fonts/gotham-medium.woff') format('woff'), /* Modern Browsers */
+		url('fonts/gotham-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('fonts/gotham-medium.svg#bdc473fae2f64b1c45b8886bcff81bae') format('svg'); /* Legacy iOS */       
+	font-style: normal;
+	font-weight: 400;
+}

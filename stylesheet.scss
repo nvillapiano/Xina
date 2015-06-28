@@ -1,0 +1,31 @@
+/*
+
+Xina
+designed and developed by Quiet Points
+www.quietpoints.com
+@quietpoints
+
+*/
+
+// variables
+
+$gotham-light:	'gotham-light', sans-serif;
+$gotham-medium:	'gotham-medium', sans-serif;
+$coral: #f4815f;
+$gold: #c69c6d;
+$blue: #b9dbdf;
+
+// imports
+
+@import 'base';
+@import 'universal';
+@import 'typography';
+@import 'home';
+@import 'menus';
+@import 'gallery';
+@import '960';
+@import '770';
+@import '769';
+@import '680';
+@import '480';
+@import 'fonts';
