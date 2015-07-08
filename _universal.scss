@@ -71,6 +71,8 @@ footer {
 		opacity: .8;
 	}
 
+.home + footer, .gallery + footer {
+	border-top: none;
 }
 
 a, a:hover, a:visited, a:active {
@@ -127,3 +129,7 @@ nav {
 		max-height: 25vh;
 	}
 }
+
+
+
+

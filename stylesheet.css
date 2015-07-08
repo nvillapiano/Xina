@@ -150,6 +150,9 @@ footer {
   .footer-nav img:hover {
     opacity: .8; }
 
+.home + footer, .gallery + footer {
+  border-top: none; }
+
 a, a:hover, a:visited, a:active {
   text-decoration: none;
   color: #c69c6d;
