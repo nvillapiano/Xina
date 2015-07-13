@@ -146,4 +146,20 @@
 			padding-bottom: 3rem;
 		}
 	}
+
+	/* Reservations */
+
+	.button {
+		font-size: 1.2rem;
+		width: 90%;
+	}
+
+	.wpcf7-form p:nth-of-type(3), .wpcf7-form p:nth-of-type(4) {
+  		width: 100%;
+	}
+
+	.wpcf7-form p:nth-of-type(4) {
+  		margin: 0;
+	}
+
 }

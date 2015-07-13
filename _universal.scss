@@ -2,7 +2,7 @@
 
 body {
 	border-top: .4rem solid $coral;
-	background: #f3f3f4;
+	background: $cream;
 	color: $gold;
 	font-family: 'gotham-light', sans-serif;
 }
@@ -70,14 +70,17 @@ footer {
 	img:hover {
 		opacity: .8;
 	}
+}
 
+.home + footer, .gallery + footer {
+	border-top: none;
 }
 
 a, a:hover, a:visited, a:active {
 	text-decoration: none;
 	color: $gold;
 	font-family: 'gotham-medium', sans-serif;
-	transition: color .3s;
+	transition: all .3s;
 }
 
 a:hover {
@@ -127,3 +130,7 @@ nav {
 		max-height: 25vh;
 	}
 }
+
+
+
+

@@ -1,6 +1,10 @@
+<body class="gallery">
+
+<div class="wrapper">
+
 <!-- gallery -->
 
-<div class="gallery">
+<div>
 
 	<div class="gallery-wrapper">
 		<h1>

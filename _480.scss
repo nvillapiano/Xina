@@ -35,4 +35,29 @@
 		margin-top: .5rem;
 	}
 
+	/* Reservations */
+	
+	.reservations h1 {
+		font-size: 2.1rem;
+	}
+
+	.half {
+		width: 100%;
+	}
+
+	.half:nth-of-type(1) {
+		padding: 2rem 0 3rem;
+	}
+
+	.half:nth-of-type(2) {
+  		border-left: none;
+  		border-top: 0.15rem solid;
+  		padding: 2rem 0; 
+	}
+
+	.button {
+		width: 80%;
+		max-width: 100%;
+	}
+
 }

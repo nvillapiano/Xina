@@ -10,6 +10,6 @@
 
 	<nav>
 		<a href="menu.php">menu</a>
-		<a href="https://www.seatme.yelp.com/r/xina-restaurant/" target="_blank">reservations</a>
+		<a href="reservations.php">reservations</a>
 		<a href="gallery.php">gallery</a>
 	</nav>

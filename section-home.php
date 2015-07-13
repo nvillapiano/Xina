@@ -1,4 +1,8 @@
-<div class="home">
+<body class="home">
+
+<div class="wrapper">
+
+<div>
 
 	<section class="main-info">
 

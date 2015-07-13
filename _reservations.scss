@@ -1,0 +1,181 @@
+// _reservations.scss
+
+.reservations {
+	text-transform: uppercase;
+
+	header {
+		height: 40vh;
+		background: url("images/waves.jpg") repeat center center;
+		background-size: 25rem;
+	}
+	.logo { 
+		img {
+			max-height: 25vh;
+		}
+	}
+	h1 {
+		text-align: center;
+		border-bottom: .15rem solid;
+		text-transform: uppercase;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding-bottom: 0.5rem;
+	}
+	h4 {
+		margin-bottom: 3rem;
+	}
+}
+
+.reservations + footer {
+	border-top: none;
+}
+
+.reservations-wrapper {
+	width: 90%;
+	margin: 0 auto;
+	padding: 0 0 1rem;
+}
+
+.half {
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+	padding: 2rem 0 5rem;
+}
+
+.half:nth-of-type(2) {
+	border-left: .15rem solid;
+}
+
+.button {
+	padding: 1rem;
+	border: .15rem solid;
+	font-size: 1.6vw;
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+	font-family: $gotham-medium;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.button:hover, .button:active {
+	background: $coral;
+	color: $cream;
+}
+
+.event-form {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	height: 0px;
+	color: $cream;
+	background: $gold;
+	overflow: hidden;
+	transition: all .3s;
+}
+
+.slide {
+	min-height: 100vh;
+	height: 100%;
+	padding: 1rem 0;	
+	overflow: scroll;
+}
+
+.wpcf7 {
+	width: 70%;
+	margin: 0 auto;
+	padding: 1%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+input, textarea {
+	width: 100%;
+	margin: 1rem 0;
+	padding: 1rem;
+	border: none;
+	font-family: $gotham-medium;
+	color: $gold;
+	font-size: 1rem;
+}
+
+textarea {
+	height: 40vw;
+	max-height: 10rem;
+}
+
+input[type="date"] {
+	text-transform: uppercase;
+	padding: 1rem;
+}
+
+/* Chome only */
+@supports (-webkit-appearance:none) {
+	input[type="date"] {
+		padding: 0.85rem 0 0.85rem 1rem;
+	} 
+}
+
+#submit {
+	color: $cream;
+	font-size: 1rem;
+	float: right;
+	min-width: 1rem;
+	width: auto;
+	padding: 0.85rem 4rem;
+	text-transform: uppercase;
+	background: transparent;
+	transition: all .3s;
+}
+
+#submit:hover {
+	background: $gold;
+}
+
+::-webkit-input-placeholder {
+	text-transform: uppercase;
+	color: $gold;
+} 
+
+:-moz-placeholder {
+	text-transform: uppercase;
+	color: $gold;
+} 
+
+::-moz-placeholder {
+	text-transform: uppercase;
+	color: $gold;
+}
+
+:-ms-input-placeholder {
+	text-transform: uppercase;
+	color: $gold;
+}
+
+.wpcf7-form p:nth-of-type(3), .wpcf7-form p:nth-of-type(4) {
+	width: calc(50% - 1rem);
+	float: left;
+}
+
+.wpcf7-form p:nth-of-type(4) {
+	margin: 0 0 0 2rem;
+}
+
+.wpcf7-form p:last-of-type {
+	margin-bottom: 5%;
+}
+
+.wpcf7-response-output {
+	display: none;
+}
+
+div[role="alert"] {
+	margin: 2rem 0 2rem 0;
+	text-align: center;
+	text-transform: uppercase;
+	min-height: 1.6rem;
+}

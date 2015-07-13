@@ -14,6 +14,7 @@ $gotham-medium:	'gotham-medium', sans-serif;
 $coral: #f4815f;
 $gold: #c69c6d;
 $blue: #b9dbdf;
+$cream: #f3f3f4;
 
 // imports
 
@@ -23,6 +24,7 @@ $blue: #b9dbdf;
 @import 'home';
 @import 'menus';
 @import 'gallery';
+@import 'reservations';
 @import '960';
 @import '770';
 @import '769';
