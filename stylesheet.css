@@ -486,6 +486,8 @@ h6 {
 
 .reservations {
   text-transform: uppercase; }
+  .reservations .wrapper {
+    height: 100%; }
   .reservations header {
     height: 40vh;
     background: url("images/waves.jpg") repeat center center;
@@ -546,7 +548,6 @@ h6 {
   transition: all .3s; }
 
 .slide {
-  min-height: 100vh;
   height: 100%;
   padding: 1rem 0;
   overflow: scroll; }
@@ -554,10 +555,7 @@ h6 {
 .wpcf7 {
   width: 70%;
   margin: 0 auto;
-  padding: 1%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
+  padding: 1%; }
 
 input, textarea {
   width: 100%;
@@ -628,6 +626,9 @@ div[role="alert"] {
   text-align: center;
   text-transform: uppercase;
   min-height: 1.6rem; }
+
+.date-label {
+  display: none; }
 
 @media only screen and (max-width: 960px) {
   nav {
@@ -759,7 +760,16 @@ div[role="alert"] {
     width: 100%; }
 
   .wpcf7-form p:nth-of-type(4) {
-    margin: 0; } }
+    margin: 0; }
+
+  .date-label {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 1rem 0 0; }
+
+  .wpcf7-form p:nth-of-type(3) {
+    float: left; } }
 @media only screen and (max-width: 680px) {
   nav {
     font-size: 0.9rem;
@@ -819,6 +829,27 @@ div[role="alert"] {
   .button {
     width: 80%;
     max-width: 100%; } }
+@media only screen and (max-width: 320px) {
+  nav {
+    padding: 6vw 0.5vw 4.5vw; }
+
+  nav a:nth-of-type(2) {
+    position: relative;
+    left: -7vw; }
+
+  h1 {
+    font-size: 2.6rem; }
+
+  h2 {
+    font-size: 1.7rem; }
+
+  /* Menu */
+  .menu-title {
+    width: 75%; }
+
+  /* Reservations */
+  .date {
+    width: 100%; } }
 @font-face {
   font-family: 'gotham-light';
   src: url("fonts/gotham-light.eot");

@@ -3,6 +3,9 @@
 .reservations {
 	text-transform: uppercase;
 
+	.wrapper {
+		height: 100%;
+	}
 	header {
 		height: 40vh;
 		background: url("images/waves.jpg") repeat center center;
@@ -78,7 +81,6 @@
 }
 
 .slide {
-	min-height: 100vh;
 	height: 100%;
 	padding: 1rem 0;	
 	overflow: scroll;
@@ -88,9 +90,6 @@
 	width: 70%;
 	margin: 0 auto;
 	padding: 1%;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 input, textarea {
@@ -179,3 +178,8 @@ div[role="alert"] {
 	text-transform: uppercase;
 	min-height: 1.6rem;
 }
+
+.date-label {
+	display: none;
+}
+

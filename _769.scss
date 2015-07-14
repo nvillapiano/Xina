@@ -160,6 +160,17 @@
 
 	.wpcf7-form p:nth-of-type(4) {
   		margin: 0;
+	}	
+
+	.date-label {
+		display: block;
+		float: left;
+		width: 100%;
+		padding: 1rem 0 0;
+	}
+
+	.wpcf7-form p:nth-of-type(3) {
+		float: left;
 	}
 
 }
