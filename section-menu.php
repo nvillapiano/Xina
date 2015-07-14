@@ -274,6 +274,7 @@
 
 						<div class="category-description">
 							PRICED BY SINGLE OR 1/2 DOZEN
+<<<<<<< HEAD
 						</div>
 
 						<?php query_posts( array ( 'post_type' => 'raw-bar', 'posts_per_page' => -1, 'order' => 'ASC' ) ); ?>
@@ -359,6 +360,106 @@
 						</div>
 
 						<?php query_posts( array ( 'post_type' => 'nigiri-and-sashimi', 'posts_per_page' => -1, 'order' => 'ASC' ) ); ?>
+=======
+						</div>
+
+						<?php query_posts( array ( 'post_type' => 'raw-bar', 'posts_per_page' => -1, 'order' => 'ASC' ) ); ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+						<div class="menu-item-wrapper">
+							<p class="menu-title">
+								<?php the_title(); ?>
+							</p>
+							<p class="menu-price">
+								<?php the_field('item_price'); ?>
+							</p>
+							<p class="menu-description">
+								<?php the_field('item_description'); ?>
+							</p>
+						</div>
+						<?php the_content(); ?>
+
+						<?php endwhile; ?>
+
+					</article>
+
+					<article class="sushi-appetizer">
+
+						<div class="menu-category">
+							Sushi Appetizers
+						</div>
+
+						<?php query_posts( array ( 'post_type' => 'sushi-appetizers', 'posts_per_page' => -1, 'order' => 'ASC' ) ); ?>
+>>>>>>> origin/master
+						<?php while ( have_posts() ) : the_post(); ?>
+						<div class="menu-item-wrapper">
+							<p class="menu-title">
+								<?php the_title(); ?>
+							</p>
+							<p class="menu-price">
+								<?php the_field('item_price'); ?>
+							</p>
+							<p class="menu-description">
+								<?php the_field('item_description'); ?>
+							</p>
+						</div>
+						<?php the_content(); ?>
+
+						<?php endwhile; ?>
+
+<<<<<<< HEAD
+					</article>
+
+					<article class="maki">
+
+						<div class="menu-icon">
+							<img src="images/maki.svg" alt="Maki">
+						</div>
+
+						<div class="menu-category">
+							MAKI
+						</div>
+=======
+					</article>	
+
+					<article class="sushi-entrees">
+
+						<div class="menu-category">
+							SUSHI ENTRÉES
+						</div>
+
+						<?php query_posts( array ( 'post_type' => 'sushi-entrees', 'posts_per_page' => -1, 'order' => 'ASC' ) ); ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+						<div class="menu-item-wrapper">
+							<p class="menu-title">
+								<?php the_title(); ?>
+							</p>
+							<p class="menu-price">
+								<?php the_field('item_price'); ?>
+							</p>
+							<p class="menu-description">
+								<?php the_field('item_description'); ?>
+							</p>
+						</div>
+						<?php the_content(); ?>
+
+						<?php endwhile; ?>
+
+						<div class="menu-icon desktop">
+							<img src="images/sushi.svg" alt="Sushi">
+						</div>
+
+					</article>
+				</div>
+
+				<div class="colspan1">
+
+					<article class="nigiri-and-sashimi">
+
+						<div class="menu-category">
+							NIGIRI &amp; SASHIMI
+						</div>
+
+						<?php query_posts( array ( 'post_type' => 'nigiri-and-sashimi', 'posts_per_page' => -1, 'order' => 'ASC' ) ); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 						<div class="menu-item-wrapper">
 							<p class="menu-title">
@@ -386,6 +487,7 @@
 						<div class="menu-category">
 							MAKI
 						</div>
+>>>>>>> origin/master
 
 						<?php query_posts( array ( 'post_type' => 'maki', 'posts_per_page' => -1, 'order' => 'ASC' ) ); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
